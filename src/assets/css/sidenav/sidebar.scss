@@ -27,8 +27,7 @@ ul li .signout {
   align-items: center;
   width: 100%;
   position: fixed;
-  z-index: 1;
-  
+  z-index: 4;
   .top-side-left {
     height: 100%;
     padding: 0 1rem;
@@ -40,13 +39,13 @@ ul li .signout {
       .top-left-custom-app-name {
         margin-top: 18px;
       }
-    
+
       .top-left-custom-logo{
         padding: 10px;
         height: 40px;
         width: 40px;
       }
-    
+
       .top-left-custom-nav-app-logo {
         display: flex;
         text-decoration: none;
@@ -79,7 +78,7 @@ ul li .signout {
     }
 
     li p {
-      color: #00B9F2;
+      color: #34C6F3;
       font-size: 1.2em;
     }
     ul .profile-icon img {
@@ -91,8 +90,9 @@ ul li .signout {
 }
 
 .both-side {
+  min-height: 500px;
   display: flex;
-  height: 90%;
+  height: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
@@ -101,14 +101,16 @@ ul li .signout {
   width: 100%;
 
   .left-side {
+    // @extend %z-index-value;
     width: 15%;
-    background-color: #00B9F2;
+    background-color: #34C6F3;
     height: 100%;
     position: fixed;
     left: 0;
   }
 
   .right-side {
+    // @extend %z-index-value;
     width: 85%;
     height: 100%;
     background-color: #f7f7f7;
@@ -230,7 +232,7 @@ ul li .signout {
   .both-side { 
 
     .left-side {
-      z-index: 100;
+      // z-index: 100;
       ul {
         list-style: none;
         padding: 0;

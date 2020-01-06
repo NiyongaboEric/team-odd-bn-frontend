@@ -8,6 +8,7 @@ import bookingIcon from '../../../assets/images/booking_icon/booking_24px.png';
 import accommodationIcon from '../../../assets/images/accommodation_icon/accommodation_24px.png';
 import logoutIcon from '../../../assets/images/logout_icon/logout_24px.png';
 import signoutUser from '../../../redux/actions/signoutAction';
+import { Redirect } from 'react-router';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export const LeftSide = (props) => {

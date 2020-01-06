@@ -1,8 +1,10 @@
 @import 'App.scss';
+
 %full-height-width {
   height: 100%;
   width: 100%;
 }
+
 %profile-name {
   margin-top: 17px;
   width: 145px;
@@ -14,6 +16,7 @@
   line-height: 15px;
   color: #00b9f2;
 }
+
 %profile-img img {
   margin-top: 13px;
   width: 20px;
@@ -21,10 +24,12 @@
   height: 20px;
   border-radius: 50%;
 }
+
 .authContainer * {
   box-sizing: border-box;
   margin: auto;
 }
+
 %auth-container {
   min-height: 650px;
   position: fixed;
@@ -33,38 +38,48 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
 .authContainer * {
   box-sizing: border-box;
   margin: auto;
 }
+
 %auth-form {
   font-size: 14px;
   width: 32%;
+
   @media screen and (min-width: 200px) and (max-width: 500px) {
     width: 100%;
     height: 100%;
     margin: 0px;
   }
+
   @media screen and (min-width: 500px) and (max-width: 1030px) {
     width: 70%;
     height: 100%;
   }
+
   border-radius: 10px;
   background-color: white;
+
   .authFormextraInfo {
     width: 100%;
     font-size: 10px;
     display: flex;
     flex-direction: column;
+
     div {
       display: flex;
+
       .orLine {
         width: 40%;
       }
+
       div {
         margin-left: 5%;
         text-align: left;
         width: auto;
+
         a {
           text-decoration: none;
           color: #00b9f2;
@@ -72,13 +87,16 @@
       }
     }
   }
+
   .barefootIcon {
     padding-top: 20px;
     width: 40%;
+
     img {
       @extend %full-height-width;
     }
   }
+
   .introNote {
     div {
       font-size: 30px;
@@ -86,23 +104,28 @@
       border-bottom: rgb(189, 187, 187) solid 1px;
     }
   }
+
   div {
     width: 90%;
+
     .button {
       height: 100%;
       width: 100%;
       box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1);
     }
+
     .socialBtn {
       height: 45px;
       width: 70%;
       margin: 0% 15%;
     }
+
     div {
       width: 100%;
       height: 40%;
       padding-top: 5px;
     }
+
     .socio-login-btn-link {
       cursor: pointer;
       box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1);
@@ -111,19 +134,23 @@
       padding-top: 0px;
       height: 110%;
       width: 100%;
+
       .social-icon {
         width: 100px;
         height: 100%;
+
         img {
           padding-left: 7px;
           margin: auto;
         }
       }
+
       .social-name {
         height: 100%;
         margin-bottom: -4px;
       }
     }
+
     input {
       border: solid 1px #5c5c5c;
       opacity: 93%;
@@ -133,18 +160,22 @@
       padding-left: 12px;
     }
   }
+
   .errorMessage {
     height: auto;
   }
 }
+
 %tripHeaders {
   margin-top: 40px;
+
   h2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.21);
     margin-top: -10px;
     margin-left: 20px;
   }
 }
+
 %trip-left-side-button {
   display: flex;
   flex-direction: column;
@@ -157,8 +188,10 @@
     margin-top: -20%;
     margin-left: -10px;
   }
+
   div {
     padding-top: 15%;
+
     a {
       position: relative;
       margin-left: 24%;
@@ -174,6 +207,7 @@
       outline: none;
       border: none;
       color: rgba(0, 0, 0, 0.53);
+
       @media screen and (min-width: 320px) and (max-width: 576px) {
         width: 90%;
         font-size: 14px !important;
@@ -183,41 +217,46 @@
         padding-bottom: 2%;
       }
     }
+
     a:hover {
       z-index: 2;
-      border: 1px solid #00B9F2;
+      border: 1px solid #00b9f2;
       z-index: 3;
-      border-right: 4px solid #F4F4F4;
+      border-right: 4px solid #f4f4f4;
       color: black;
       font-weight: bold;
+
       @media screen and (min-width: 320px) and (max-width: 576px) {
         margin-bottom: -3px;
         margin-left: 30px;
         margin-right: -20px;
         width: 90%;
-        border: 1px solid #00B9F2;
+        border: 1px solid #00b9f2;
         background-color: white;
         height: 80%;
         text-align: center;
       }
     }
+
     .active {
       z-index: 10;
-      border: 1px solid #00B9F2;
+      border: 1px solid #00b9f2;
       z-index: 1;
-      border-right: 4px solid #F4F4F4;
+      border-right: 4px solid #f4f4f4;
       color: black;
       font-weight: bold;
+
       @media screen and (min-width: 320px) and (max-width: 576px) {
         margin-bottom: -3px;
         width: 85%;
-        border: 1px solid #00B9F2;
-        background-color: white;    
+        border: 1px solid #00b9f2;
+        background-color: white;
         height: 80%;
       }
     }
   }
 }
+
 ::-webkit-scrollbar {
   width: 0px;
 }

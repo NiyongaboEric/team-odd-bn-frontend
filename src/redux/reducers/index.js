@@ -17,4 +17,5 @@ export default combineReducers({
   signout: signoutReducer,
   trips: tripReducers,
   allCities: getAllCitiesReducers,
+
 });

@@ -8,16 +8,16 @@
   margin: 0;
 }
 .defaultFooter {
-  background-color: $logo-color;
+  background-color: #34C6F3;
   color: white;
   display: block;
   justify-content: space-evenly;
   position: relative;
   width: 100%;
+  margin-top: 50px;
   padding: 23px 0;
   bottom: 0;
   text-align: center;
-
   .footer-link {
     text-decoration: none;
     color: white;
@@ -26,23 +26,22 @@
     cursor: pointer;
   }
 }
-
 .authFooter{
-  background-color: $logo-color;
-color: white;
-display: block;
-justify-content: space-evenly;
-position: absolute;
-width: 100%;
-margin-top: 50px;
-padding: 23px 0;
-bottom: 0;
-text-align: center;
-.footer-link {
-  text-decoration: none;
+    background-color: $logo-color;
   color: white;
-}
-.footer-link:hover {
-  cursor: pointer;
-}
+  display: block;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  margin-top: 50px;
+  padding: 23px 0;
+  bottom: 0;
+  text-align: center;
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  .footer-link:hover {
+    cursor: pointer;
+  }
 }
