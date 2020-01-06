@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import axios from 'axios';
 import resetPasswordView from './containers/user/password/resetPassword';
 import forgotPasswordView from './views/auth/forgotPasswordView';
+import createAccommodationView from './views/accommodation/createAccommodationView';
 import store from './redux/store';
 import Signup from './containers/user/signup/signup';
 import successfulVerification from './containers/user/email/successfulVerification';
@@ -43,13 +44,27 @@ const App = () => (
           <Route path="/verify-email" exact component={verifyEmailView} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/requests" exact component={Requests} />
-          <Route path="/requests/:tripRequestId" exact component={SingleRequest} />
+          <Route
+            path="/requests/:tripRequestId"
+            exact
+            component={SingleRequest}
+          />
           <Route path="/reset-password" exact component={resetPasswordView} />
           <Route path="/forgot-password" exact component={forgotPasswordView} />
           <Route path="/profile" exact component={Profile} />
-          <Route path="/successful-verification" exact component={successfulVerification} />
-          <Route path="/dashboard" exact component={Dashboard} />
+          <Route path="/verify-email" exact component={verifyEmailView} />
           <Route path="/trips/roundtrip" exact component={RoundTrip} />
+          <Route
+            path="/successful-verification"
+            exact
+            component={successfulVerification}
+          />
+          <Route path="/dashboard" exact component={Dashboard} />
+          <Route
+            path="/accommodation/create"
+            exact
+            component={createAccommodationView}
+          />
           <Route component={Notfound} />
         </Switch>
       </div>

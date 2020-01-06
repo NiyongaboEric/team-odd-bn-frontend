@@ -22,7 +22,12 @@ export class TopRightSide extends Component {
   UNSAFE_componentWillReceiveProps(prevProps, nextProps) {
     const { profile } = prevProps;
     if (profile) {
-      const { data: { imageURL, user: { firstName, lastName } } } = profile;
+      const {
+        data: {
+          imageURL,
+          user: { firstName, lastName },
+        },
+      } = profile;
       this.setState({
         image: imageURL,
         firstName,
@@ -53,7 +58,7 @@ export class TopRightSide extends Component {
             <Link to="/settings">
               <img src={settingsIcon} alt="notification icon" />
             </Link>
-            { ToolTip('settings') }
+            {ToolTip('settings')}
           </li>
           <li className="username">
             <p>{`${firstName} ${lastName}`}</p>
