@@ -22,15 +22,12 @@ import SingleRequest from './containers/Trips/SingleRequest';
 import Profile from './components/Profile';
 import './assets/css/style.css';
 import LandingPage from './components/LandingPage';
+import ProtectedRoute from './Routers/protectRoutes';
 
 dotenv.config();
 
 axios.defaults.BASE_URL = process.env.BASE_URL;
 
-
-dotenv.config();
-
-axios.defaults.BASE_URL = process.env.BASE_URL;
 
 const App = () => (
   <Provider store={store}>
@@ -39,6 +36,7 @@ const App = () => (
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/signin" exact component={Signin} />
+          <ProtectedRoute exact path="/dashboard" component={Dashboard} />
           <Route path="/social/auth/success" exact component={SocialLogin} />
           <Route path="/verify-email" exact component={verifyEmailView} />
           <Route path="/signup" exact component={Signup} />
