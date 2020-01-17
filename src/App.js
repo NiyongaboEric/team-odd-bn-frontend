@@ -46,7 +46,6 @@ const App = () => (
           <Route path="/forgot-password" exact component={forgotPasswordView} />
           <Route path="/profile" exact component={Profile} />
           <Route path="/successful-verification" exact component={successfulVerification} />
-          <Route path="/dashboard" exact component={Dashboard} />
           <Route path="/trips/roundtrip" exact component={RoundTrip} />
           <Route component={Notfound} />
         </Switch>

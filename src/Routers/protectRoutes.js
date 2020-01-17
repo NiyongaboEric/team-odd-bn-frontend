@@ -15,7 +15,7 @@ const protectRoutes = ({ component: Component, ...rest }) => {
         }
         if (result.isVerified === false) {
           localStorage.clear();
-          return <Redirect to={{ pathname: '/resend-email', state: { from: props.location } }} />;
+          return <Redirect to={{ pathname: '/verify-email', state: { from: props.location } }} />;
         }
         localStorage.clear();
         return <Redirect to={{ pathname: '/signin', state: { from: props.location } }} />;
